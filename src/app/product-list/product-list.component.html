@@ -76,8 +76,19 @@
 		header="Création d'un produit"
 		[modal]="true" styleClass="p-fluid">
 	<form [formGroup]="productForms" (submit)="addProduct()">
+<<<<<<< HEAD
 		<input type="text" formControlName="nom" pInputText >
 		<input type="number" formControlName="prix" pInputText >
+=======
+		<div class="grid">
+			<div class="col-12 md:col-6">
+				<input type="text" formControlName="nom" pInputText  placeholder="nom">
+			</div>
+			<div class="col-12 md:col-6">
+				<input type="number" formControlName="prix" pInputText placeholder="prix">
+			</div>
+		</div>
+>>>>>>> 4a756aa4e55b4f6c1498156d1d263e55b8292ca6
 		<p-button label="Enregistrer" type="submit">
 			<i *ngIf="!loading" style="margin-right:5px ;" class="pi pi-check" ></i>
 		</p-button>
