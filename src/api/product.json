@@ -1,0 +1,32 @@
+[
+    {
+      "id":"1234S",
+      "nom":"Ordinateur",
+      "prix": 250000
+    },
+    {
+        "id":"1234D",
+        "nom":"Télévision",
+        "prix":100000
+      },
+      {
+        "id":"1234I",
+        "nom":"Iphone",
+        "prix":50000
+      },
+      {
+          "id":"1234Y",
+          "nom":"Imprimante",
+          "prix":150000
+        },
+        {
+          "id":"1234T",
+          "nom":"Redmi",
+          "prix":60000
+        },
+        {
+          "id":"8234T",
+          "nom":"PH",
+          "prix": 8000000
+        }
+  ]

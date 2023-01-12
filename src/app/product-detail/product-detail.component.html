@@ -1,1 +1,14 @@
-<p>product-detail works!</p>
+<div class="grid mb-6 mt-3">
+	<div class="bordure  col-2 surface-200">
+		<span>Nom du produit</span>
+	</div>
+	<div class="bordure  col-2">
+		<span *ngIf="product">{{product.nom}}</span>
+	</div>
+	<div class="bordure  col-3 surface-200">
+		<span>Prix</span>
+	</div>
+	<div class="bordure  col-3">
+		<span *ngIf="product">{{product.prix}} FCFA</span>
+	</div>
+</div>
