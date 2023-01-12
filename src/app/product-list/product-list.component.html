@@ -33,7 +33,7 @@
 									<p-sortIcon field="nom"></p-sortIcon>
 								</div>
 							</th>
-							<th pSortableColumn="prix" scope="col" >
+							<th pSortableColumn="prix" scope="col">
 								<div class="text-center">
 									Prix
 								</div>
@@ -41,6 +41,7 @@
 									<p-sortIcon field="nom"></p-sortIcon>
 								</div>
 							</th>
+							<th rowspan="2" scope="col">Actions</th>
 						</tr>
 						<tr>
 							<th>
@@ -56,9 +57,10 @@
 					<ng-template pTemplate="body" let-product>
 						<tr>
 							<td>{{product.nom}}</td>
-							<td>{{product.prix}}</td>
+							<td class="text-right">{{product.prix}} FCFA</td>
 							<td style="flex: 0 0 4rem">
-								<button pButton pRipple type="button" icon="pi pi-trash" pTooltip="Détail"
+								<button pButton pRipple type="button" icon="pi pi-angle-right" pTooltip="Détail"
+										(click)="productDetail(product.id)"
 										class="p-button-rounded p-button-text">
 								</button>
 							</td>
@@ -82,17 +84,16 @@
 =======
 		<div class="grid">
 			<div class="col-12 md:col-6">
-				<input type="text" formControlName="nom" pInputText  placeholder="nom">
+				<input type="text" formControlName="nom" pInputText placeholder="nom">
 			</div>
 			<div class="col-12 md:col-6">
 				<input type="number" formControlName="prix" pInputText placeholder="prix">
 			</div>
 		</div>
->>>>>>> 4a756aa4e55b4f6c1498156d1d263e55b8292ca6
 		<p-button label="Enregistrer" type="submit">
 			<i *ngIf="!loading" style="margin-right:5px ;" class="pi pi-check" ></i>
 		</p-button>
 	</form>
 </p-dialog>
 
-<p-toast  [style]="{top:'10%',right:0}"></p-toast>
+<p-toast [style]="{top:'10%',right:0}"></p-toast>

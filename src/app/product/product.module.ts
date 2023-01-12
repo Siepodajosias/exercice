@@ -11,6 +11,7 @@ import { DialogModule } from 'primeng/dialog';
 import { MessageService } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { InputTextModule } from 'primeng/inputtext';
     ProductRoutingModule,
     TableModule,
     ToastModule,
+    HttpClientModule,
     DialogModule,
     ButtonModule,
     InputTextModule
